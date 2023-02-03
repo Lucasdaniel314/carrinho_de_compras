@@ -18,6 +18,7 @@ public class Programa {
 		String nome = sc.nextLine();
 		System.out.print("id (numero de 4 digitos): ");
 		int id = sc.nextInt();
+		sc.nextLine();
 		System.out.print("email: ");
 		sc.next();
 		String email = sc.nextLine();
@@ -40,6 +41,7 @@ public class Programa {
 			System.out.println("[3] mostar resumo");
 			System.out.println("[4] encerrar programa");
 			resp = sc.nextInt();
+			sc.nextLine();
 			switch (resp) {
 				case 1:
 					carrinho.adcionar();

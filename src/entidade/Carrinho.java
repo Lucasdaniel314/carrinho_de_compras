@@ -78,13 +78,9 @@ public class Carrinho {
 	}
 	
 	public void remover() {
-		int x;
 		System.out.print("o que quer remover? ");
-		sc.next();
 		String hj = sc.nextLine();
-		//ajuda
-		x = lista.indexOf(hj);
-		lista.remove(x);
+		lista.removeIf(produto -> produto.getNome().equals(hj));
 	}
 	
 	public double total() {
